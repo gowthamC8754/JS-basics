@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- funcdtion declaration -->
+    <script>
+        function multi(x,y){
+            return x*y;
+        }
+        console.log(multi(7,8));
+    </script>
+    <!-- function default parameter -->
+    <script>
+        function value(name="there"){
+            console.log("hi",name);
+        }
+        value("gowtham");
+
+    </script>
+    <!-- furencursion  -->
+    <script>
+        function factorial(n){
+            if(n==1)
+            return 1
+        return n*factorial(n-1)
+            } 
+        
+        console.log(factorial(5));
+    </script>
+    <!-- function expression -->
+    <script>
+        let add=function(n){
+            return n%2==0
+        }
+        console.log(add(8))
+    </script>
+    <!-- arrow function -->
+    <script>
+        let sub=(a,b)=>{
+            return a-b
+        }
+        console.log(sub(9,7));
+
+
+    </script>
+    <script>
+        let cart = function(...args){
+            let acd=1
+            for(let val of args)
+            acd += val
+        return acd
+             
+        }
+        console.log(cart(9,8));
+    
+    </script>
+
+</body>
+
+</html>  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let reacha = new Promise((resolve,reject)=>{
+        const reached= true
+        if(resolve){
+        setTimeout(resolve,3000," bala reached")
+    
+        }
+        else
+
+        reject("not reached")
+        })
+
+        async function bdc(){
+            console.log("heloo")
+            res = await reacha
+            console.log(res)
+
+        }
+bdc();
+    </script>
+    
+</body> 
+</html>

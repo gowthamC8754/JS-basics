@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    const names=[
+        {name:"bala",age:20},
+        {name:"alex",age:26}
+    ]
+
+    let result=names.map(x=>x.age)
+    console.log(result);
+
+    const numbers=[20,100,30,500]
+    let results=numbers.filter(y=>y<100)
+    console.log(results);
+    
+    const add=[29,83,76,97]
+    const res=add.reduce((total,ele)=>total+ele)
+    console.log(res);
+
+    </script>
+    <script>
+        function acb(name){
+            console.log(name)
+        } 
+        function abc(name){
+           console.log("hi",name)
+        }
+        function abc(solution){
+                 solution("gowtham") 
+                }
+        abc(acb);
+
+
+
+    </script>f
+</body>
+</html>

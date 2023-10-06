@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>this is the child
+</title>
+<style>
+p::first-line{
+color:green;
+} 
+</style>
+</head>
+<body>
+<p>this is the paragraph</p>
+<p>this is theparagraph</p>
+</body>
+</html>

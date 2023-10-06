@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student= {
+            email:"gowthamdhoni43@gmail.com",
+            password:"12345",
+
+            login(){
+                console.log("hi",this.email);
+                console.log("logged in");
+
+            },
+            logout(){
+                console.log("log out");
+            },
+
+
+        }
+        student.login();
+
+    </script>
+    
+    <script>
+   class Student1{
+    constructor(mark,rank){
+        this.mark=mark;
+        this.rank=rank;
+
+    }
+    pass(){ 
+        console.log("hi", this.mark);
+        console.log("paased inthe exam");
+
+    }
+    fail(){
+      console.log  ("fail in the exam");
+    }
+   } 
+   let user1=new Student1("99","2");
+   user1.pass();  
+
+    </script>
+</body>
+</html>

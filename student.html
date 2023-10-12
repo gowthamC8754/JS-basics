@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+  { name: "Student 1", marks: [90, 85, 88,90,90] },
+  { name: "Student 2", marks: [50,30,20] },
+  { name: "Student 3", marks: [85, 76, 91] },
+  { name: "Student 4", marks: [89, 91, 87] },
+  { name: "Student 5", marks: [95, 82, 78] },
+  { name: "Student 6", marks: [77, 88, 93] },
+  { name: "Student 7", marks: [86, 90, 84] },
+  { name: "Student 8", marks: [92, 79, 88] },
+  { name: "Student 9", marks: [84, 87, 90] },
+  { name: "Student 10", marks: [88, 85, 91] }
+];
+function calculateTotalAndAverage(student) {
+  const totalMarks = student.marks.reduce((total, mark) => total + mark, 0);
+  console.log(`${student.name}'s total marks: ${totalMarks}`);
+  
+
+  if (totalMarks >= 140) {
+    console.log("average mark alculate ")
+    
+
+    const averageMarks = totalMarks / student.marks.length;
+    console.log(`${student.name}'s average marks: ${averageMarks}`);
+  }
+  else
+  ("you are fail in exam");
+}
+students.forEach(calculateTotalAndAverage);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+               const students = [
+  { name: "Student 1", marks: [90, 85, 88,90,90] },
+  { name: "Student 2", marks: [90,80,90,90,90 ] },
+  { name: "Student 3", marks: [85, 76, 91,88,89] },
+  { name: "Student 4", marks: [89, 91, 88,89,87] },
+  { name: "Student 5", marks: [95, 82, 78,67,87] },
+  { name: "Student 6", marks: [77, 88, 93,90,89] },
+  { name: "Student 7", marks: [86, 90, 84,98,87] },
+  { name: "Student 8", marks: [92, 79, 88,98,65] },
+  { name: "Student 9", marks: [84, 87, 90,67,98] },
+  { name: "Student 10", marks: [88, 85, 91,87,93] }
+];
+function totalandaverage(student){
+const totalmarks=student.marks.reduce((total,marks)=>total+marks,0);
+console.log(`${student.name}'s total marks: ${totalmarks}`);
+
+if (totalmarks >= 200) {
+    const averageMarks=totalmarks/student.marks.length;
+    console.log(`${student.name}'s average marks: ${averageMarks}`);
+
+}
+}
+students.forEach(totalandaverage);
+    </script>
+</body>
+</html>

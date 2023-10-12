@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body><script>
+    function ebbil(fan,motor,light,unitbill){
+        const totalunit=fan+motor+light;
+        console.log("total unit of ",totalunit)
+        unitbill(totalunit)
+    }
+    function unitbill(totalunit){
+        if(totalunit>=100){
+            console.log("the unitbill of 100")
+        }
+
+        
+    }
+    ebbil(10,60,10,unitbill)
+</script>
+</html>

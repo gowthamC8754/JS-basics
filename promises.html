@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   
+   const bookmyshow=new Promise((resolve,reject)=>{
+        let bookingconfirm=true
+        if(bookingconfirm)
+         resolve()
+        else
+        reject()
+    })
+    bookmyshow.then(success)
+    .catch(failure)
+    
+    function success(){
+        console.log("thanks for booking tickets")
+
+    }
+    function failure(){
+        console.log("thanks for try ")
+    }
+  </script>  
+  <script>
+     let ayncmodel=new Promise((resolve,reject)=>{
+        let bookingconfirm= false
+        if(bookingconfirm)
+         setTimeout(resolve,3000,"thanks for booking tickets ")
+        else
+        reject()
+          console.log("thaks for try")
+
+    })
+        async function asyncexample(){
+           console.log("hello....") 
+            res = await ayncmodel
+           console.log(res)
+           console.log("bye")
+        }     
+        asyncexample();
+  </script>
+  <script>
+    const wordkey=new Promise((resolve,reject)=>{
+        let suces= true
+        if(suces)
+        setTimeout(resolve,4000,"thanks for the boking")
+        else
+        reject("thansk for trying books")
+    
+    }
+    )
+    async function tryfunction(){
+        console.log("hi")
+        abc = await wordkey
+        console.log(abc)
+    }
+    tryfunction()
+    
+  </script>
+</body>
+</html>
